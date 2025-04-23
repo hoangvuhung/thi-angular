@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": "da01",
+      "email": "hunghvps40463@gmail.com",
+      "password": "asdf",
+      "name": "hung",
+      "birthday": "07/10/2005",
+      "gender": "nam"
+    },
+    {
+      "id": "zd2o",
+      "name": "hoàng Vũ Hùng",
+      "gender": "nam",
+      "birthday": "2005-10-07",
+      "email": "hunghvp@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "zamm",
+      "name": "Tuấn Nhi",
+      "gender": "nam",
+      "birthday": "2005-10-07",
+      "email": "nhi@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "r614",
+      "name": "hoàng hùng",
+      "gender": "nam",
+      "birthday": "2025-04-03",
+      "email": "hunghvps40463@gmail.com",
+      "password": ""
+    },
+    {
+      "id": "28m2",
+      "name": "hugn",
+      "gender": "nam",
+      "birthday": "2025-04-10",
+      "email": "hunghvps40463@gmail.com",
+      "password": "12345"
+    }
+  ]
+}
