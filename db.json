@@ -40,5 +40,25 @@
       "email": "hunghvps40463@gmail.com",
       "password": "12345"
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "123",
+      "name": "túi tote1",
+      "price": 1234
+    },
+    {
+      "id": 2,
+      "image": "123",
+      "name": "túi tote2",
+      "price": 1234
+    },
+    {
+      "id": 3,
+      "image": "123",
+      "name": "túi tote3",
+      "price": 1234
+    }
   ]
 }

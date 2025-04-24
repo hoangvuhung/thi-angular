@@ -1,2 +1,20 @@
-<p>home</p>
+<div *ngIf="products.length === 0" class="text-gray-500 text-center">
+  Không có sản phẩm nào.
+</div>
 
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+  <div
+    *ngFor="let product of products"
+    class="border rounded-lg p-4 shadow hover:shadow-lg transition"
+  >
+    <img
+      [src]="product.image"
+      alt="{{ product.name }}"
+      class="w-full h-40 object-cover rounded"
+    />
+    <h3 class="text-lg font-semibold mt-2">{{ product.name }}</h3>
+    <p class="text-green-600 font-bold">
+      {{ product.price | currency : "VND" : "symbol" }}
+    </p>
+  </div>
+</div>

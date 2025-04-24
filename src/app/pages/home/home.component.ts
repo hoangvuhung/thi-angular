@@ -1,24 +1,22 @@
-import { Component } from '@angular/core';
-import { ISanPham } from '../../cautrucdata';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Product, ProductService } from '../../product.service';
 
 @Component({
   selector: 'app-home',
   imports: [CommonModule],
+  standalone: true,
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {
-  sp_arr: ISanPham[] = [];
-  async ngOnInit() {
-    try {
-      const response = await fetch('http://localhost:3000/api/spmoi/3');
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      this.sp_arr = (await response.json()) as ISanPham[];
-    } catch (error) {
-      console.error('Lỗi khi fetch sản phẩm mới:', error);
-    }
+export class HomeComponent implements OnInit {
+  products: Product[] = [];
+
+  constructor(private productService: ProductService) {}
+
+  ngOnInit(): void {
+    this.productService.getProducts().subscribe((data) => {
+      this.products = data;
+    });
   }
 }
